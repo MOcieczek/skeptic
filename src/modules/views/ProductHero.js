@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
@@ -10,7 +9,6 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Placeholder from '../../assets/placeholder.png';
-import Logo from '../../assets/logo.jpg';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -46,20 +44,6 @@ export default function Album() {
     <React.Fragment>
       <CssBaseline />
       <main>
-        {/* Hero unit */}
-        <div>
-          <Container maxWidth="sm" align="center" paddingTop='20'>
-            <img 
-            src={Logo}
-            width='400'
-            alt="logo"
-            ></img>
-            <Typography variant="h5" align="center" color="textPrimary" paragraph>
-              Fintech enthusiast and product freelancer
-            </Typography>
-          </Container>
-        </div>
-        {/* End hero unit */}
 
         <Container className={classes.cardGrid} maxWidth="md">
           <Grid container spacing={4}>

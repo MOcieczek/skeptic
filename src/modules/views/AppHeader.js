@@ -1,76 +1,41 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import Link from '@material-ui/core/Link';
-import AppBar from '../components/AppBar';
-import Toolbar, { styles as toolbarStyles } from '../components/Toolbar';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
 import Logo from '../../assets/logo.jpg';
 
-const styles = theme => ({
-  title: {
-    fontSize: 24,
-    
-  },
-  placeholder: toolbarStyles(theme).root,
-  toolbar: {
-    justifyContent: 'space-between',
-  },
-  left: {
-    flex: 1,
-  },
-  leftLinkActive: {
-    color: theme.palette.common.white,
-  },
-  right: {
-    flex: 1,
-    display: 'flex',
-    justifyContent: 'flex-end',
-  },
-  rightLink: {
-    fontSize: 16,
-    color: "black",
-    marginLeft: theme.spacing(3),
-  },
-  linkSecondary: {
-    color: theme.palette.secondary.main,
-  },
-});
 
-function AppHeader(props) {
-  const {classes} = props;
+const useStyles = makeStyles((theme) => ({
+
+
+  container: {
+    paddingTop: theme.spacing(8),
+    paddingBottom: theme.spacing(8),
+  },
+
+
+}));
+
+
+export default function Album() {
+  const classes = useStyles();
 
   return (
-    <div>
-      <AppBar position="fixed">
-        <Toolbar className={classes.toolbar}>
-          <div />
+    <React.Fragment>
+      <CssBaseline />
+      <main>
+        <Container maxWidth="sm" align="center" paddingTop='20'>
             <img 
-            height="35"
-            alt="logo"
             src={Logo}
-            />
-          <div className={classes.right}>
-            <Link
-              color="inherit"
-              variant="h6"
-              underline="none"
-              className={classes.rightLink}
-              target="_blank"
-              href="https://raizerwaitlist.typeform.com/to/pBcsAG"
-            >
-              {'Waitlist'}
-            </Link>
-      
-          </div>
-        </Toolbar>
-      </AppBar>
-      <div className={classes.placeholder} />
-    </div>
+            width='400'
+            alt="logo"
+            ></img>
+            <Typography variant="h5" align="center" color="textPrimary" paragraph>
+              Fintech enthusiast and product freelancer
+            </Typography>
+          </Container>
+      </main>
+    </React.Fragment>
   );
 }
-
-AppHeader.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
-
-export default withStyles(styles)(AppHeader);
