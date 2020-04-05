@@ -48,7 +48,7 @@ export default function AppHeader() {
             <Typography variant="h5" align="center" color="textPrimary" paragraph>
             Hi, I'm Monika! <span role="img" aria-label="girl">👋</span>
             <br></br>
-            I'm a contractor product owner/manager/designer. Fin-tech is my favorite tech, but [almost] anything goes. 
+            I'm a product owner/manager/designer contractor. Fin-tech is my favorite tech, but [almost] anything goes. 
             With experience from <Link className={classes.link} target="_blank" to='http://www.gimitheapp.com'>Gimi</Link>, <Link className={classes.link} target="_blank" to='http://www.tink.com'>Tink</Link>, <Link className={classes.link} target="_blank" to='http://www.scalable.company'>Scalable</Link> and <Link className={classes.link} target="_blank" to='https://squidapp.co/'>Squid</Link>, 
             I know how to make products come to life. 
             </Typography>
