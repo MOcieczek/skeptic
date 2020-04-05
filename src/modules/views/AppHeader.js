@@ -1,5 +1,4 @@
 import React from 'react';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
@@ -12,41 +11,49 @@ const useStyles = makeStyles((theme) => ({
 
   container: {
     paddingTop: theme.spacing(20),
-    paddingBottom: theme.spacing(8),
+    paddingLeft: theme.spacing(4),
+    paddingRight: theme.spacing(4),
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "column",
+    position: "relative",
+    maxWidth: "sm",
   },
   link: {
     variant: "h5",
     color: "blue",
   },
-
+  image: {
+    maxWidth: "70%",
+    minWidth: "50%",
+    paddingBottom: theme.spacing(5),
+  },
 }));
 
 
-export default function Album() {
+export default function AppHeader() {
   const classes = useStyles();
 
   return (
-    <React.Fragment>
-      <CssBaseline />
-      <main>
-        <Container maxWidth="sm" align="center" justifyContent="center" paddingTop="20" className={classes.container}>
+        <Container maxWidth="md" className={classes.container}>
             <img 
             src={Logo}
-            width='400'
+            className={classes.image}
             alt="logo"
             ></img>
             <Typography variant="h5" align="center" color="textPrimary" paragraph>
-            Hi, I'm Monika! 
+            Hi, I'm Monika! <span role="img" aria-label="girl">👋</span>
             <br></br>
-            I work as a product owner/manager/designer, mostly, but not exclusively, with fintech. With experience from <Link className={classes.link} target="_blank" to='http://www.gimitheapp.com'>Gimi</Link>, <Link className={classes.link} target="_blank" to='http://www.tink.com'>Tink</Link>, <Link className={classes.link} target="_blank" to='http://www.scalable.company'>Scalable</Link>, 
-              , I know how to make great products come to life. 
+            I'm a contractor product owner/manager/designer. Fin-tech is my favorite tech, but [almost] anything goes. 
+            With experience from <Link className={classes.link} target="_blank" to='http://www.gimitheapp.com'>Gimi</Link>, <Link className={classes.link} target="_blank" to='http://www.tink.com'>Tink</Link>, <Link className={classes.link} target="_blank" to='http://www.scalable.company'>Scalable</Link> and <Link className={classes.link} target="_blank" to='https://squidapp.co/'>Squid</Link>, 
+            I know how to make great products come to life. 
             </Typography>
             <br></br>
             <Typography fontSize="6" color="textSecondary">
               monika.ocieczek@gmail.com
             </Typography>
           </Container>
-      </main>
-    </React.Fragment>
+      
   );
 }
