@@ -1,18 +1,16 @@
 import React from 'react';
-import logo from './assets/logo.jpg';
+import withRoot from './modules/withRoot'
+import ProductHero from './modules/views/ProductHero.js';
+import AppFooter from './modules/views/AppFooter.js';
 import './App.css';
 
-function App() {
+function Index() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
-    </div>
-  );
+    <React.Fragment>      
+      <ProductHero />,
+      <AppFooter />
+    </React.Fragment>
+  )
 }
 
-export default App;
+export default withRoot(Index)
