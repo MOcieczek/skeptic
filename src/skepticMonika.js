@@ -1,6 +1,7 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
+import { Link } from 'react-router-dom';
 import Container from '@material-ui/core/Container';
 import Monkan from './assets/monkan.png';
   
@@ -19,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
     maxWidth: "sm",
   },
-  link: {
+  links: {
     variant: "h5",
     color: "blue",
     textDecoration: 'none',
@@ -50,16 +51,21 @@ export default function AppHeader() {
             Hi, I'm Monika! <span role="img" aria-label="girl">👋</span>
             <br></br>
             <br></br>
-            I'm a product owner/manager/designer contractor. Fin-tech is my favorite tech, but [almost] anything goes. 
-            With experience from <a href="http://www.gimitheapp.com" target="_blank" className={classes.link}>Gimi</a>, <a className={classes.link} target="_blank" href='http://www.tink.com'>Tink</a>, <a className={classes.link} target="_blank" href='http://www.scalable.company'>Scalable</a> and <a className={classes.link} target="_blank" href='https://squidapp.co/'>Squid</a>, 
-            I know how to make products come to life.
+            I draw, code [React beginner], run, eat and sleep. I like reading sci-fi, spending time outdoors and alpacas. My fails: singing, French and growing mushrooms at home. <span role="img" aria-label="poland">🇵🇱</span> <span role="img" aria-label="sweden">🇸🇪</span> <span role="img" aria-label="peace">🏳</span> <span role="img" aria-label="pirate">🏴‍☠️</span>
             </Typography>
+            <div>
+            <Typography variant="h5" align="center" color="textPrimary" paragraph>
+              I'm also <Link className={classes.links} to="/">Skeptic</Link>
+            </Typography>
+            </div>
             <br></br>
-            <Typography variant="body2" className={classes.body2}>
-              <a className={classes.link} href="mailto:monika.ocieczek@gmail.com">
-              Get in touch!
-              </a>
-            </Typography>
+            <div>
+            <Typography variant="body2" className={classes.body2} align="center" paragraph>
+            <span role="img" aria-label="star">✨</span> <a className={classes.links} href="mailto:monika.ocieczek@gmail.com">
+               Get in touch!
+              </a> 
+            </Typography>  
+            </div>
           </Container>
       
   );
