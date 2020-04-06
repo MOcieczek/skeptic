@@ -30,7 +30,8 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: theme.spacing(5),
   },
   body2: {
-    color: "rgb(0,0,0,0.4)"
+    color: "rgb(0,0,0,0.4)",
+    textDecoration: 'none',
   },
 }));
 
@@ -55,7 +56,9 @@ export default function AppHeader() {
             </Typography>
             <br></br>
             <Typography variant="body2" className={classes.body2}>
-              monika.ocieczek@gmail.com
+              <a className={classes.link} href="mailto:monika.ocieczek@gmail.com">
+              Get in touch!
+              </a>
             </Typography>
           </Container>
       
