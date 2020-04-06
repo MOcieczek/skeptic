@@ -2,14 +2,14 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import Logo from './assets/logo.jpg';
+import Monkan from './assets/monkan.png';
   
 
 const useStyles = makeStyles((theme) => ({
 
 
   container: {
-    paddingTop: theme.spacing(20),
+    paddingTop: theme.spacing(10),
     paddingLeft: theme.spacing(4),
     paddingRight: theme.spacing(4),
     display: "flex",
@@ -42,7 +42,7 @@ export default function AppHeader() {
   return (
         <Container maxWidth="sm" className={classes.container}>
             <img 
-            src={Logo}
+            src={Monkan}
             className={classes.image}
             alt="logo"
             ></img>

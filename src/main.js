@@ -4,7 +4,7 @@ import {
   NavLink,
   HashRouter
 } from "react-router-dom";
-import SkepticHome from "./skepticHome";
+import Skeptic from "./skepticHome";
 import SkepticMonika from "./skepticMonika";
 
 class Main extends Component {
@@ -13,10 +13,10 @@ class Main extends Component {
       <HashRouter>
         <div>
           <ul className="header">
-            <NavLink to="/">Skeptic</NavLink> <NavLink to="/monika">Monika</NavLink>
+            <NavLink exact to="/">Skeptic</NavLink> or <NavLink to="/monika">Monika</NavLink>?
           </ul>
           <div className="content">
-            <Route path="/" component={SkepticHome}/>
+            <Route exact path="/" component={Skeptic}/>
             <Route path="/monika" component={SkepticMonika}/>
           </div>
         </div>
