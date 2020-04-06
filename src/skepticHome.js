@@ -55,10 +55,7 @@ export default function Skeptic() {
             className={classes.image}
             alt="logo"
             ></img>
-            <Typography variant="h5" align="center" color="#ffffff" paragraph>
-            This is Skeptic <span role="img" aria-label="hi">🙌</span>
-            <br></br>
-            <br></br>
+            <Typography variant="h5" align="center" color="#ffffff" paragraph> 
             I'm a product owner/manager/designer contractor. Fin-tech is my favorite tech, but [almost] anything goes. 
             With experience from <a href="http://www.gimitheapp.com" target="_blank" rel="noopener noreferrer" className={classes.links}>Gimi</a>, <a className={classes.links} rel="noopener noreferrer" target="_blank" href='http://www.tink.com'>Tink</a>, <a className={classes.links} rel="noopener noreferrer" target="_blank" href='http://www.scalable.company'>Scalable</a> and <a className={classes.links} rel="noopener noreferrer" target="_blank" href='https://squidapp.co/'>Squid</a>, 
             I know how to make products come to life.
