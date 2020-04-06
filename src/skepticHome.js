@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     overflow: 'hidden',
     backgroundColor: "rgb(0,0,0)",
     backgroundSize: "cover",
-    bottom: 0,
+    height: '100vh',
     },
 
   container: {
@@ -56,7 +56,7 @@ export default function Skeptic() {
             alt="logo"
             ></img>
             <Typography variant="h5" align="center" color="#ffffff" paragraph> 
-            I'm a product owner/manager/designer contractor. Fin-tech is my favorite tech, but [almost] anything goes. 
+            I'm a product manager/designer contractor. FinTech is my favorite tech, but [almost] anything goes. 
             With experience from <a href="http://www.gimitheapp.com" target="_blank" rel="noopener noreferrer" className={classes.links}>Gimi</a>, <a className={classes.links} rel="noopener noreferrer" target="_blank" href='http://www.tink.com'>Tink</a>, <a className={classes.links} rel="noopener noreferrer" target="_blank" href='http://www.scalable.company'>Scalable</a> and <a className={classes.links} rel="noopener noreferrer" target="_blank" href='https://squidapp.co/'>Squid</a>, 
             I know how to make products come to life.
             </Typography>

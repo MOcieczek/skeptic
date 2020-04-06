@@ -51,7 +51,7 @@ export default function SkepticMonika() {
             Hi, I'm Monika! <span role="img" aria-label="girl">👋</span>
             <br></br>
             <br></br>
-            I draw, code [React beginner], run, eat and sleep. I like reading sci-fi, spending time outdoors and alpacas. My fails: singing, French and growing mushrooms at home. <span role="img" aria-label="poland">🇵🇱</span> <span role="img" aria-label="sweden">🇸🇪</span> <span role="img" aria-label="peace">🏳</span> <span role="img" aria-label="pirate">🏴‍☠️</span>
+            I draw, code [React beginner], run, eat and sleep. I like reading sci-fi, spending time outdoors and alpacas. My fails: singing, French and growing mushrooms at home. <span role="img" aria-label="poland">🇵🇱</span> <span role="img" aria-label="sweden">🇸🇪</span> <span role="img" aria-label="pirate">🏴‍☠️</span>
             </Typography>
             <div>
             <Typography variant="h5" align="center" color="textPrimary" paragraph>
