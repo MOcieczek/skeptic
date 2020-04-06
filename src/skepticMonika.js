@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: 'none',
   },
   image: {
-    maxWidth: "70%",
+    maxWidth: "80%",
     minWidth: "50%",
     paddingBottom: theme.spacing(5),
   },
