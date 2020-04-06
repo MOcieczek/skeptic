@@ -5,7 +5,6 @@ import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 import Logo from '../../assets/logo.jpg';
 
-
 const useStyles = makeStyles((theme) => ({
 
 
@@ -23,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
   link: {
     variant: "h5",
     color: "blue",
+    textDecoration: 'none',
   },
   image: {
     maxWidth: "70%",
@@ -48,9 +48,10 @@ export default function AppHeader() {
             <Typography variant="h5" align="center" color="textPrimary" paragraph>
             Hi, I'm Monika! <span role="img" aria-label="girl">👋</span>
             <br></br>
+            <br></br>
             I'm a product owner/manager/designer contractor. Fin-tech is my favorite tech, but [almost] anything goes. 
-            With experience from <Link className={classes.link} target="_blank" to='http://www.gimitheapp.com'>Gimi</Link>, <Link className={classes.link} target="_blank" to='http://www.tink.com'>Tink</Link>, <Link className={classes.link} target="_blank" to='http://www.scalable.company'>Scalable</Link> and <Link className={classes.link} target="_blank" to='https://squidapp.co/'>Squid</Link>, 
-            I know how to make products come to life. 
+            With experience from <a href="http://www.gimitheapp.com" target="_blank" className={classes.link}>Gimi</a>, <a className={classes.link} target="_blank" href='http://www.tink.com'>Tink</a>, <a className={classes.link} target="_blank" href='http://www.scalable.company'>Scalable</a> and <a className={classes.link} target="_blank" href='https://squidapp.co/'>Squid</a>, 
+            I know how to make products come to life.
             </Typography>
             <br></br>
             <Typography variant="body2" className={classes.body2}>
