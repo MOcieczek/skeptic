@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-export default function AppHeader() {
+export default function SkepticMonika() {
   const classes = useStyles();
 
   return (

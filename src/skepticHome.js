@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-export default function AppHeader() {
+export default function Skeptic() {
   const classes = useStyles();
 
   return (

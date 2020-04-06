@@ -15,7 +15,7 @@ class Main extends Component {
           <ul className="header">
             <NavLink exact to="/">Skeptic</NavLink> or <NavLink to="/monika">Monika</NavLink>?
           </ul>
-          <div className="content">
+          <div>
             <Route exact path="/" component={Skeptic}/>
             <Route path="/monika" component={SkepticMonika}/>
           </div>
