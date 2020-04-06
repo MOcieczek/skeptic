@@ -1,159 +1,66 @@
 import React from 'react';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import Placeholder from '../../assets/placeholder.png';
-
+import Logo from './assets/logo.jpg';
+  
 
 const useStyles = makeStyles((theme) => ({
 
 
-  cardGrid: {
-    paddingTop: theme.spacing(8),
-    paddingBottom: theme.spacing(8),
+  container: {
+    paddingTop: theme.spacing(20),
+    paddingLeft: theme.spacing(4),
+    paddingRight: theme.spacing(4),
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "column",
+    position: "relative",
+    maxWidth: "sm",
   },
-  card: {
-    height: '100%',
-    display: 'flex',
-    flexDirection: 'column',
+  link: {
+    variant: "h5",
+    color: "blue",
+    textDecoration: 'none',
   },
-  cardMedia: {
-    paddingTop: '0%', // 16:9
+  image: {
+    maxWidth: "70%",
+    minWidth: "50%",
+    paddingBottom: theme.spacing(5),
   },
-  cardContent: {
-    flexGrow: 1,
-  },
-  footer: {
-    backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(6),
+  body2: {
+    color: "rgb(0,0,0,0.4)",
+    textDecoration: 'none',
   },
 }));
 
-const cards = [1, 2, 3, 4, 5];
 
-export default function Album() {
+export default function AppHeader() {
   const classes = useStyles();
 
   return (
-    <React.Fragment>
-      <CssBaseline />
-      <main>
-
-        <Container className={classes.cardGrid} maxWidth="md">
-          <Grid container spacing={4}>
-              <Grid item xs={12} sm={6} md={4}>
-                <Card className={classes.card}>
-                  <CardMedia className={classes.cardMedia}/>
-                  <img 
-                  src={Placeholder}
-                  title="Gimi" 
-                  />
-                  <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Gimi
-                    </Typography>
-                    <Typography>
-                      CPO and Co-Founder
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                  </CardActions>
-                </Card>
-              </Grid>
-              <Grid item xs={12} sm={6} md={4}>
-                <Card className={classes.card}>
-                  <CardMedia className={classes.cardMedia}/>
-                  <img 
-                  src={Placeholder}
-                  title="Tink" 
-                  />
-                  <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Tink
-                    </Typography>
-                    <Typography>
-                      Product Manager and Product team lead
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                  </CardActions>
-                </Card>
-              </Grid>
-              <Grid item xs={12} sm={6} md={4}>
-                <Card className={classes.card}>
-                  <CardMedia className={classes.cardMedia}/>
-                  <img 
-                  src={Placeholder}
-                  title="Scalable" 
-                  />
-                  <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Scalable.ai
-                    </Typography>
-                    <Typography>
-                      Product strategy and definition
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                  </CardActions>
-                </Card>
-              </Grid>
-              <Grid item xs={12} sm={6} md={4}>
-                <Card className={classes.card}>
-                  <CardMedia className={classes.cardMedia}/>
-                  <img 
-                  src={Placeholder}
-                  title="Gimi" 
-                  />
-                  <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Heading
-                    </Typography>
-                    <Typography>
-                      This is a media card. You can use this section to describe the content.
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                  </CardActions>
-                </Card>
-              </Grid>
-              <Grid item xs={12} sm={6} md={4}>
-                <Card className={classes.card}>
-                  <CardMedia className={classes.cardMedia}/>
-                  <img 
-                  src={Placeholder}
-                  title="Gimi" 
-                  />
-                  <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Heading
-                    </Typography>
-                    <Typography>
-                      This is a media card. You can use this section to describe the content.
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                  </CardActions>
-                </Card>
-              </Grid>
-          </Grid>
-        </Container>
-      </main>
-
-      {/* Footer */}
-      <footer className={classes.footer}>
-        <Typography variant="h6" align="center" gutterBottom>
-          Get in touch soon!
-        </Typography>
-      </footer>
-      {/* End footer */}
-
-    </React.Fragment>
+        <Container maxWidth="sm" className={classes.container}>
+            <img 
+            src={Logo}
+            className={classes.image}
+            alt="logo"
+            ></img>
+            <Typography variant="h5" align="center" color="textPrimary" paragraph>
+            Hi, I'm Monika! <span role="img" aria-label="girl">👋</span>
+            <br></br>
+            <br></br>
+            I'm a product owner/manager/designer contractor. Fin-tech is my favorite tech, but [almost] anything goes. 
+            With experience from <a href="http://www.gimitheapp.com" target="_blank" className={classes.link}>Gimi</a>, <a className={classes.link} target="_blank" href='http://www.tink.com'>Tink</a>, <a className={classes.link} target="_blank" href='http://www.scalable.company'>Scalable</a> and <a className={classes.link} target="_blank" href='https://squidapp.co/'>Squid</a>, 
+            I know how to make products come to life.
+            </Typography>
+            <br></br>
+            <Typography variant="body2" className={classes.body2}>
+              <a className={classes.link} href="mailto:monika.ocieczek@gmail.com">
+              Get in touch!
+              </a>
+            </Typography>
+          </Container>
+      
   );
 }

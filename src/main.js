@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from "../node_modules/react";
 import {
   Route,
   NavLink,
@@ -12,10 +12,8 @@ class Main extends Component {
     return (
       <HashRouter>
         <div>
-          <h1>Simple SPA</h1>
           <ul className="header">
-            <li><NavLink to="/">SkepticHome</NavLink></li>
-            <li><NavLink to="/stuff">SkepticMonika</NavLink></li>
+            <NavLink to="/">Skeptic</NavLink> <NavLink to="/monika">Monika</NavLink>
           </ul>
           <div className="content">
             <Route path="/" component={SkepticHome}/>
