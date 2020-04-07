@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
   },
   textContainer: {
     height: '100vh',
-    backgroundColor: "#F5F5F5",
+    backgroundColor: "rgb(102,255,255,0.7)",
     padding: "8%",
     justifyContent: "center",
     alignItems: "center",
@@ -38,6 +38,7 @@ const useStyles = makeStyles((theme) => ({
   },
   image: {
     maxHeight: '20vh',
+    maxWidth: '80%',
   },
   grid: {
     justifyContent: 'center',
@@ -67,7 +68,7 @@ export default function SkepticMonika() {
             <br></br>
             I draw, code [React beginner], run, eat and sleep. I like reading sci-fi, spending time outdoors and alpacas. My fails: singing, French and growing mushrooms at home. <span role="img" aria-label="poland">🇵🇱</span> <span role="img" aria-label="sweden">🇸🇪</span> <span role="img" aria-label="pirate">🏴‍☠️</span>
             </Typography>
-            
+            <br></br>
             <Typography variant="h5">
               I'm also <Link className={classes.links} to="/">Skeptic</Link>
             </Typography>
