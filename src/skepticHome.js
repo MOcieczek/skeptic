@@ -72,9 +72,9 @@ export default function Skeptic() {
             </Typography> 
             <br></br>
             <br></br>
-            <Typography variant="body2">
-            <span role="img" aria-label="star">✨</span> <a className={classes.links} href="mailto:monika.ocieczek@gmail.com">
-               Get in touch!
+            <Typography>
+            <a className={classes.links} href="mailto:monika.ocieczek@gmail.com">
+               Get in touch! <span role="img" aria-label="star">✨</span> 
               </a> 
               <br></br>
               <br></br>
