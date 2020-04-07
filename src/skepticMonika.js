@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
   },
   textContainer: {
     height: '100vh',
-    backgroundColor: "rgb(102,255,255,0.7)",
+    backgroundColor: "rgb(102,255,255,0.5)",
     padding: "8%",
     justifyContent: "center",
     alignItems: "center",
@@ -46,9 +46,6 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     display: "flex",
     alignItems: "center",
-  },
-  button: {
-   
   },
 }));
 

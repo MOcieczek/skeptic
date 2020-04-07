@@ -5,6 +5,9 @@ import Container from '@material-ui/core/Container';
 import { Link } from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
 import Logo from './assets/logo.png';
+import Button from '@material-ui/core/Button';
+import SendIcon from '@material-ui/icons/CallMade';
+
 
 const useStyles = makeStyles((theme) => ({
   
@@ -72,13 +75,9 @@ export default function Skeptic() {
             </Typography> 
             <br></br>
             <br></br>
-            <Typography>
-            <a className={classes.links} href="mailto:monika.ocieczek@gmail.com">
-               Get in touch! <span role="img" aria-label="star">✨</span> 
-              </a> 
-              <br></br>
-              <br></br>
-            </Typography>  
+            <Button className={classes.button} variant="outlined" href="mailto:monika.ocieczek@gmail.com" endIcon={<SendIcon/>}>
+              Get in touch! 
+              </Button>  
           </Container>
       </Grid>
     </Grid>
