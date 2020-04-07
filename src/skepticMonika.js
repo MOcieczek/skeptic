@@ -4,21 +4,32 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
 import Container from '@material-ui/core/Container';
 import Monkan from './assets/monkan.png';
+import Grid from '@material-ui/core/Grid';
   
 
 const useStyles = makeStyles((theme) => ({
-
-
-  container: {
-    paddingTop: theme.spacing(10),
-    paddingLeft: theme.spacing(4),
-    paddingRight: theme.spacing(4),
-    display: "flex",
+  root: {
+    display: 'flex',
+    overflow: 'hidden',
+    backgroundSize: "cover",
+    flexGrow: '1', 
     justifyContent: "center",
     alignItems: "center",
-    flexDirection: "column",
-    position: "relative",
-    maxWidth: "sm",
+    },
+
+  imageContainer: {
+    height: '100vh',
+    justifyContent: "center",
+    alignItems: "center",
+    display: 'flex',
+  },
+  textContainer: {
+    height: '100vh',
+    backgroundColor: "#F5F5F5",
+    padding: "8%",
+    justifyContent: "center",
+    alignItems: "center",
+    display: 'flex',
   },
   links: {
     variant: "h5",
@@ -26,13 +37,12 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: 'none',
   },
   image: {
-    maxWidth: "80%",
-    minWidth: "50%",
-    paddingBottom: theme.spacing(5),
+    maxHeight: '20vh',
   },
-  body2: {
-    color: "rgb(0,0,0,0.4)",
-    textDecoration: 'none',
+  grid: {
+    justifyContent: 'center',
+    display: "flex",
+    alignItems: "center",
   },
 }));
 
@@ -41,32 +51,35 @@ export default function SkepticMonika() {
   const classes = useStyles();
 
   return (
-        <Container maxWidth="sm" className={classes.container}>
+    <Grid container className={classes.root}>
+      <Grid item xs={12} sm={12} md={6} className={classes.imageContainer}>
             <img 
             src={Monkan}
             className={classes.image}
             alt="logo"
             ></img>
-            <Typography variant="h5" align="center" color="textPrimary" paragraph>
+            </Grid>
+      <Grid item xs={12} sm={12} md={6} className={classes.textContainer}>
+          <Container>
+            <Typography variant="h5">
             Hi, I'm Monika! <span role="img" aria-label="girl">👋</span>
             <br></br>
             <br></br>
             I draw, code [React beginner], run, eat and sleep. I like reading sci-fi, spending time outdoors and alpacas. My fails: singing, French and growing mushrooms at home. <span role="img" aria-label="poland">🇵🇱</span> <span role="img" aria-label="sweden">🇸🇪</span> <span role="img" aria-label="pirate">🏴‍☠️</span>
             </Typography>
-            <div>
-            <Typography variant="h5" align="center" color="textPrimary" paragraph>
+            
+            <Typography variant="h5">
               I'm also <Link className={classes.links} to="/">Skeptic</Link>
             </Typography>
-            </div>
             <br></br>
-            <div>
-            <Typography variant="body2" className={classes.body2} align="center" paragraph>
-            <span role="img" aria-label="star">✨</span> <a className={classes.links} href="mailto:monika.ocieczek@gmail.com">
-               Get in touch!
+            <Typography>
+            <a className={classes.links} href="mailto:monika.ocieczek@gmail.com">
+              Get in touch! <span role="img" aria-label="flash">⚡️</span> 
               </a> 
-            </Typography>  
-            </div>
+              </Typography>  
           </Container>
+      </Grid>
+    </Grid>
       
   );
 }
