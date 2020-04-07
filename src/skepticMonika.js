@@ -5,7 +5,9 @@ import { Link } from 'react-router-dom';
 import Container from '@material-ui/core/Container';
 import Monkan from './assets/monkan.png';
 import Grid from '@material-ui/core/Grid';
-  
+import Button from '@material-ui/core/Button';
+import SendIcon from '@material-ui/icons/CallMade';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -45,6 +47,9 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
   },
+  button: {
+   
+  },
 }));
 
 
@@ -73,11 +78,10 @@ export default function SkepticMonika() {
               I'm also <Link className={classes.links} to="/">Skeptic</Link>
             </Typography>
             <br></br>
-            <Typography>
-            <a className={classes.links} href="mailto:monika.ocieczek@gmail.com">
-              Get in touch! <span role="img" aria-label="flash">⚡️</span> 
-              </a> 
-              </Typography>  
+            <br></br>
+            <Button className={classes.button} variant="outlined" href="mailto:monika.ocieczek@gmail.com" endIcon={<SendIcon/>}>
+              Get in touch! 
+              </Button>  
           </Container>
       </Grid>
     </Grid>
