@@ -12,33 +12,37 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     overflow: 'hidden',
     backgroundSize: "cover",
-    height: '100vh',
     flexGrow: '1', 
     justifyContent: "center",
     alignItems: "center",
     },
 
-  container: {
-    backgroundColor: "#000000",
+  imageContainer: {
     height: '100vh',
+    backgroundColor: "#000000",
     justifyContent: "center",
     alignItems: "center",
+    display: 'flex',
+  },
+  textContainer: {
+    height: '100vh',
+    padding: "8%",
+    justifyContent: "center",
+    alignItems: "center",
+    display: 'flex',
   },
   links: {
     variant: "h5",
-    color: "#FFD700",
+    color: "blue",
     textDecoration: 'none',
   },
   image: {
     maxHeight: '20vh',
   },
-  body2: {
-    variant: "body2",
-    textDecoration: 'none',
-  },
   grid: {
     justifyContent: 'center',
     display: "flex",
+    alignItems: "center",
 
   },
 }));
@@ -49,16 +53,16 @@ export default function Skeptic() {
 
   return (
     <Grid container className={classes.root}>
-      <Grid item xs={12} sm={12} md={6} className={classes.container}>
+      <Grid item xs={12} sm={12} md={6} className={classes.imageContainer}>
             <img 
             src={Logo}
             className={classes.image}
             alt="logo"
             ></img>
       </Grid>
-      <Grid item xs={12} sm={12} md={6} >
-          <Container color="#ffffff">
-            <Typography variant="h5" align="center" color="#ffffff" paragraph> 
+      <Grid item xs={12} sm={12} md={6} className={classes.textContainer}>
+          <Container>
+            <Typography variant="h5"> 
             I'm a product manager/designer contractor. FinTech is my favorite tech, but [almost] anything goes. 
             With experience from <a href="http://www.gimitheapp.com" target="_blank" rel="noopener noreferrer" className={classes.links}>Gimi</a>, <a className={classes.links} rel="noopener noreferrer" target="_blank" href='http://www.tink.com'>Tink</a>, <a className={classes.links} rel="noopener noreferrer" target="_blank" href='http://www.scalable.company'>Scalable</a> and <a className={classes.links} rel="noopener noreferrer" target="_blank" href='https://squidapp.co/'>Squid</a>, 
             I know how to make products come to life.
@@ -68,7 +72,7 @@ export default function Skeptic() {
             </Typography> 
             <br></br>
             <br></br>
-            <Typography className={classes.body2} align="center" paragraph>
+            <Typography variant="body2">
             <span role="img" aria-label="star">✨</span> <a className={classes.links} href="mailto:monika.ocieczek@gmail.com">
                Get in touch!
               </a> 
