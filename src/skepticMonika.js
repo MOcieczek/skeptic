@@ -65,10 +65,10 @@ export default function SkepticMonika() {
       <Grid item xs={12} sm={12} md={6} className={classes.textContainer}>
           <Container>
             <Typography variant="h5">
-            Hi, I'm Monika! <span role="img" aria-label="girl">👋</span>
+            Hi, I'm Monika! <span role="img" aria-label="poland">🇵🇱</span> <span role="img" aria-label="sweden">🇸🇪</span> <span role="img" aria-label="pirate">🏴‍☠️</span>
             <br></br>
             <br></br>
-            I draw, code [React beginner], run, eat and sleep. I like reading sci-fi, spending time outdoors and alpacas. My fails: singing, French and growing mushrooms at home. <span role="img" aria-label="poland">🇵🇱</span> <span role="img" aria-label="sweden">🇸🇪</span> <span role="img" aria-label="pirate">🏴‍☠️</span>
+            I draw, code [React beginner], run, eat and sleep. I like reading sci-fi, spending time outdoors and alpacas. My fails: singing, French and growing mushrooms at home. 
             </Typography>
             <br></br>
             <Typography variant="h5">

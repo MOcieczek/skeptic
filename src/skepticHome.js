@@ -66,6 +66,9 @@ export default function Skeptic() {
       <Grid item xs={12} sm={12} md={6} className={classes.textContainer}>
           <Container>
             <Typography variant="h5"> 
+            Hello <span role="img" aria-label="hi">👋</span>
+            <br></br>
+            <br></br>
             I'm a product manager/designer contractor. FinTech is my favorite tech, but [almost] anything goes. 
             With experience from <a href="http://www.gimitheapp.com" target="_blank" rel="noopener noreferrer" className={classes.links}>Gimi</a>, <a className={classes.links} rel="noopener noreferrer" target="_blank" href='http://www.tink.com'>Tink</a>, <a className={classes.links} rel="noopener noreferrer" target="_blank" href='http://www.scalable.company'>Scalable</a> and <a className={classes.links} rel="noopener noreferrer" target="_blank" href='https://squidapp.co/'>Squid</a>, 
             I know how to make products come to life.
