@@ -69,9 +69,9 @@ export default function Skeptic() {
             Hello <span role="img" aria-label="hi">👋</span>
             <br></br>
             <br></br>
-            I'm a product manager/designer contractor. FinTech is my favorite tech, but [almost] anything goes. 
+            I'm a product freelancer. FinTech is my favorite tech, but [almost] anything goes. 
             With experience from <a href="http://www.gimitheapp.com" target="_blank" rel="noopener noreferrer" className={classes.links}>Gimi</a>, <a className={classes.links} rel="noopener noreferrer" target="_blank" href='http://www.tink.com'>Tink</a>, <a className={classes.links} rel="noopener noreferrer" target="_blank" href='http://www.scalable.company'>Scalable</a> and <a className={classes.links} rel="noopener noreferrer" target="_blank" href='https://squidapp.co/'>Squid</a>, 
-            I know how to make products come to life.
+            I know how to make great products come to life.
             <br></br>
             <br></br>
             When I'm not Skeptic, I'm <Link className={classes.links} to="/monika">Monika</Link>
